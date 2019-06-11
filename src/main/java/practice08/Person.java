@@ -25,6 +25,11 @@ public class Person {
 
     @Override
     public boolean equals(Object obj) {
-        return this.id == ((Person)obj).id;
+        return obj instanceof Person ? this.id == ((Person)obj).id : false;
+    }
+
+    @Override
+    public int hashCode() {
+        return this.id;
     }
 }
