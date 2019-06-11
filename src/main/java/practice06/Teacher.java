@@ -1,7 +1,5 @@
 package practice06;
 
-import javax.annotation.Nullable;
-
 public class Teacher extends Person {
     private int klass;
 
@@ -18,8 +16,7 @@ public class Teacher extends Person {
 
     @Override
     public String introduce() {
-        String ret = super.introduce().concat(" I am a Teacher. I teach");
-        ret.concat(this.klass > 0 ? String.format("Class %d", this.klass) : "No Class");
-        return ret;
+        String ret = super.introduce().concat(" I am a Teacher. I teach ");
+        return ret.concat(this.klass > 0 ? String.format("Class %d.", this.klass) : "No Class.");
     }
 }
