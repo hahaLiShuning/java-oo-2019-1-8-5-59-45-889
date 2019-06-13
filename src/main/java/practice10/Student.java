@@ -12,6 +12,10 @@ public class Student extends Person {
         return klass;
     }
 
+    public void setKlass(Klass klass) {
+        this.klass = klass;
+    }
+
     @Override
     public String introduce() {
         String ret = super.introduce().concat(" ".concat("I am a Student."));

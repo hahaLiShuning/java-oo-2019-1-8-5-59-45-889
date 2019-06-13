@@ -28,6 +28,7 @@ public class Klass {
     public void appendMember(Student student) {
         if (!this.list.contains(student)) {
             this.list.add(student);
+            student.setKlass(this);
         }
     }
 

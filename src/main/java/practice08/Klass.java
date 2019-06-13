@@ -14,6 +14,7 @@ public class Klass {
 
     public void assignLeader(Student leader) {
         this.leader = leader;
+        leader.setKlass(this);
     }
 
     public Student getLeader() {
